@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point of the program
+ * main - Entry point
  *
- * Description: This function prints the string "with proper grammar,
- *              but the outcome is a piece of art," using printf.
+ * Description: This function prints using printf.
  *
  * Return: Always 0 (success)
  */
