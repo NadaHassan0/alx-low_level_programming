@@ -23,5 +23,5 @@ int main(void)
 		printf(" %d and is less than 6 and not 0", x);
 	else if (x == 0)
 		printf(" %d and is 0", x);
-		return (0);
+		retrn (0);
 }
