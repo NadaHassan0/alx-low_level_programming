@@ -21,7 +21,7 @@ int main(void)
 		printf(" %d and is greater than 5", x);
 	else if (x < 6 && x != 0)
 		printf(" %d and is less than 6 and not 0", x);
-	else if (x == 0)
+	else
 		printf(" %d and is 0", x);
 		retrn (0);
 }
