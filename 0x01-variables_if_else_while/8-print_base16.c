@@ -12,9 +12,9 @@ int main(void)
 
 	while (digit <= 102)
 	{
-		putchar(digit);
 		if (digit == 57)
 			digit = 39;
+		putchar(digit);
 		digit++;
 	}
 	putchar('\n');
