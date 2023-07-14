@@ -24,5 +24,5 @@ int main(void)
 	else
 		printf(" %d and is 0", x);
 
-	return(0);
+	return (0);
 }
