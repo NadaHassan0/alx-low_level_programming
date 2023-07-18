@@ -3,11 +3,14 @@
  *
  *print_alphabet - a function that prints the alphabet in lowercase
  */
+
 void print_alphabet(void)
 {
-	int x;
+	char x;
 
-	for (x = 97; x <=122; x++)
+	for (x = 'a'; x <= 'z'; x++)
+	{
 		_putchar(x);
+	}
 	_putchar('\n');
 }
