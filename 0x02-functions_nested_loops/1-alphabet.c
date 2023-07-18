@@ -7,8 +7,11 @@
  */
 
 void print_alphabet(void)
-{ int x;
+{
+	int x;
+
 	for (x = 'a'; x <= 'z'; x++)
 		printf("%d", x);
+
 	printf("\n");
 }
