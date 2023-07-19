@@ -10,11 +10,8 @@ int _abs(int c);
 {
 	if (c < 0)
 	{
-		int x;
-
-		x = c * -1;
-		return (x);
+		c = c * -1;
+		return (c);
 	}
-	else
 		return (c);
 }
