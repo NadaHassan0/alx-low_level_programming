@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int x = 0;
 
-	for (; *s != '\0'; s++)//'\0', is a special character used to indicate the end of a string in C
+	for (; *s != '\0'; s++)
 	{
 		x++;
 	}
