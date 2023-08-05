@@ -1,29 +1,46 @@
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <string.h>
 
+/**
+  * main - Prints the sum of args positive numbers
+  * @argc: argument count
+  * @argv: argument vector
+  *
+  * Return: Always zero
+  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int i;
+	unsigned int k, sum = 0;
+	char *e;
 
-	if (argc == 1)
+	if (argc > 1)
 	{
-		printf("0\n");
-		return (0);
-	}
-		for (int i = 1; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
-			for (int j = 0; argv[i][j] != '\0'; j++)
+			e = argv[i];
+
+			for (k = 0; k < strlen(e); k++)
 			{
-				if (!isdigit(argv[i][j]))
+				if (e[k] < 48 || e[k] > 57)
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
-					sum += atoi(argv[i]);
+
+			sum += atoi(e);
+			e++;
 		}
 
-	printf("%d\n", sum);
+		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("0\n");
+	}
+
 	return (0);
 }
